@@ -5,11 +5,16 @@ body {
   }
   
   .grid {
-  
+    display: grid;
+    grid-template: 100px 8fr 5fr 4fr 5fr 80px / repeat(6, 1fr);
+    grid-gap: 20px;
+
   }
   
   header {
-  
+    grid-column: 1 / 7;
+    display: grid;
+
   }
   
   .title {
@@ -28,6 +33,9 @@ body {
     font-size: 3em;
     font-weight: 300;
     letter-spacing: 3.7px;
+
+    grid-column: 1 / 7;
+
   
   }
   
@@ -43,7 +51,9 @@ body {
   
   .about {
     background-color: #f0f0f0;
-  
+
+    grid-column: 1 / 7;
+    display: grid;
   }
   
   .text {
@@ -62,19 +72,22 @@ body {
     font-weight: 500;
     letter-spacing: 0.5px;
     text-align: center;
-  
+    display: grid;
   }
   
   .address {
+    grid-column: 1 / span 2;
   
   }
   
   .hours {
+    grid-column: 3 / span 2;
   
   }
   
   .call-us {
-  
+    grid-column: 5 / span 2;
+    
   }
   
   .icon {
@@ -89,14 +102,17 @@ body {
     font-size: 18px;
     font-style: italic;
     letter-spacing: 3.7px;
+    display: grid;
   
   }
   
   .one {
-  
+    grid-column: 1 / span 3;
+    
   }
   
   .two {
+    grid-column: 4 / span 3;
   
   }
   
@@ -106,5 +122,10 @@ body {
     font-family: Poppins;
     font-size: 16px;
     letter-spacing: 0.4px;
+
+    grid-column: 1 / 7;
+    display: grid;
+
+
   
   }
